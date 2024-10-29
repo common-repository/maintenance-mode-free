@@ -1,0 +1,229 @@
+/*------------------------------------------------------------------
+Common Stylesheet
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+Table of contents
+
+1. Fonts
+2. Elements
+3. Background
+4. Main-container
+5. Counter
+6. Footer
+
+-------------------------------------------------------------------*/
+/* ==================================================================
+1. Fonts
+================================================================== */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
+
+/* ==================================================================
+ 2. Elements
+================================================================== */
+
+body.maintenance {
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	white-space: normal;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+span,
+p,
+input {
+	line-height: 24px;
+	font-family: 'Lato', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+
+/* ==================================================================
+ 3. background
+================================================================== */
+/* Twenty sixteen theme*/
+body.maintenance:not(.custom-background-image):before, body.maintenance:not(.custom-background-image):after {
+	height: 0;
+}
+
+#demo-1 {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+/* ==================================================================
+ 4. Main-container
+================================================================== */
+
+.maintenance .content {
+	position: relative;
+	margin: 0 40px;
+	z-index: 999;
+}
+
+.maintenance .main-content {
+	padding: 0 60px;
+	z-index: 999;
+	margin: 0;
+}
+
+.maintenance .content:after {
+	background: rgba(0, 0, 0, 0.5);;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	content: "";
+	z-index: -1;
+	border-radius: 4px;
+}
+
+.maintenance .main-logo a {
+	margin: 50px 0;
+}
+
+.maintenance .main-content h1 {
+	font-family: 'Lato', sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	padding-bottom: 30px;
+	word-spacing: 3px;
+	color: #ffffff;
+}
+
+.maintenance .main-content p {
+	font-size: 16px;
+	padding-bottom: 15px;
+	color: #ffffff;
+}
+
+.maintenance .free .main-content p {
+	font-size: 16px;
+	padding-bottom: 32px;
+}
+
+/* ==================================================================
+ 5. Counter
+================================================================== */
+
+.maintenance #counter {
+	color: #eeeeee;
+	overflow: hidden;
+	padding-bottom: 21px;
+	margin-top: 40px;
+	margin-bottom: 35px;
+}
+
+.maintenance .counter-container {
+	display: table;
+	margin: 0 auto;
+}
+
+.maintenance #counter .box {
+	display: inline-block;
+	width: 75px;
+	height: 68px;
+	text-align: center;
+	overflow: hidden;
+	padding: 8px 0;
+	margin: 5% 8px;
+	border: 2px solid #fff;
+	position: relative;
+	border-radius: 2px;;
+}
+
+.maintenance #counter .number {
+	font-size: 28px;
+	text-align: center;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.maintenance #counter span {
+	display: block;
+	font-size: 15px;
+	text-align: center;
+	font-weight: normal;
+}
+
+
+/*========================
+7. Footer
+==========================*/
+
+.maintenance .footer {
+	background: rgba(0, 0, 0, 0.6);;
+	color: #aaa;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	overflow: hidden;
+	margin-bottom: 0;
+	font-size: 14px;
+	padding: 14px 0;
+}
+
+.maintenance .footer p {
+	margin-bottom: 0;
+	font-size: 14px;
+}
+
+.maintenance .footer p a,
+.maintenance .footer a {
+	color: #aaa;
+	text-decoration: none;
+	-webkit-transition: all 0.33s;
+	transition: all 0.33s;
+}
+
+.maintenance .footer p a:hover,
+.maintenance .footer a:hover {
+	color: #a65b06;
+	text-decoration: none;
+}
